@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/goods-details/index",
+    "pages/shop-cart/index",
+    "pages/to-pay-order/index",
+    "pages/select-address/index",
+    "pages/address-add/index",
+    "pages/order-list/index",
+    "pages/order-details/index",
+    "pages/wuliu/index",
+    "pages/mycoupons/index",
+    "pages/my/index",
+    "pages/topics/index",
+    "pages/types/index",
+    "pages/test/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow":"0 0 6px 0",
+    "list": [{
+     "pagePath": "pages/index/index",
+      "iconPath": "images/nav/home-off.png",
+      "selectedIconPath": "images/nav/home-on.png",
+      "text": "首页"
+    }, 
+    {
+      "pagePath": "pages/topics/index",
+      "iconPath": "images/nav/topics-off.png",
+      "selectedIconPath": "images/nav/topics-on.png",
+      "text": "专题"
+    },
+    {
+      "pagePath":"pages/types/index",
+      "iconPath":"images/nav/type-off.png",
+      "selectedIconPath":"images/nav/type-on.png",
+      "text":"分类"
+    },
+    {
+      "pagePath":"pages/shop-cart/index",
+      "iconPath":"images/nav/cart-off.png",
+      "selectedIconPath":"images/nav/cart-on.png",
+      "text":"书画篮子"
+    },
+    {
+      "pagePath": "pages/my/index",
+      "iconPath": "images/nav/my-off.png",
+      "selectedIconPath": "images/nav/my-on.png",
+      "text": "个人"
+    }]
+  }
+}

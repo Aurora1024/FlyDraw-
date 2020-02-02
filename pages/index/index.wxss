@@ -1,0 +1,392 @@
+/**index.wxss**/
+
+.container {
+  background-color: #F2f2f2;
+  min-height: 100%
+}
+.swiper-container{
+  width: 750rpx;
+  position: relative;  
+}
+.swiper_box {
+  width: 100%;
+  height:562.5rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  height:562.5rpx;
+}
+.swiper-container .dots{  
+  position: absolute;  
+  left: 0;  
+  right: 0;  
+  bottom: 20rpx;  
+  display: flex;  
+  justify-content: center;  
+}  
+.swiper-container .dots .dot{  
+  margin: 0 8rpx;  
+  width: 14rpx;  
+  height: 14rpx;  
+  background: #fff;  
+  border-radius: 50%;  
+  transition: all .6s;  
+  opacity: .5;
+}  
+.swiper-container .dots .dot.active{  
+  width: 14rpx;  
+  opacity: 1;
+}
+
+.type-navbar{
+  white-space: nowrap;
+  display: flex;
+  height: 88rpx;
+  width: 100%;
+  background-color: #fff;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.type-box{
+  width:160rpx;
+  box-sizing: content-box;
+  font-size: 24rpx;
+  line-height: 84rpx;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+}
+.type-navbar-item{
+  border-bottom: 4rpx solid #fff;
+}
+.type-item-on{
+  border-bottom: 4rpx solid #e64340;
+}
+
+.goods-container{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 24rpx;
+}
+.goods-box{
+  width: 339rpx;
+  height: 472rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+}
+.goods-box .img-box{
+  width: 339rpx;
+  height: 339rpx;
+  overflow: hidden;
+}
+.goods-box .img-box image{
+   width: 339rpx;
+   height: 339rpx;
+}
+.goods-box .goods-title{
+  width: 280rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0 0rpx 0;
+  color:#000;
+  margin-left: 24rpx;
+}
+.goods-box .goods-price{
+  width: 280rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0;
+  color:#e64340;
+  margin-left: 24rpx;
+}
+.no-more-goods{
+  text-align: center;
+  font-size: 24rpx;
+  padding-bottom:48rpx; 
+  color: #999;
+}
+.type-container{
+  width: 100%;
+  height: 88rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+.pos-fiexd{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.coupons{
+  margin-top:10rpx;
+  width: 100%;
+  height: 180rpx;
+  overflow: hidden;
+}
+.coupons-scroll{
+  display: flex;
+  white-space: nowrap;
+  height: 180rpx;
+  width: 100%;
+  background-color: #fff;
+}
+.coupons-item{
+  width:300rpx;
+  height: 180rpx;
+  margin: 10rpx;
+  padding-top: 20rpx;
+  padding-left: 15rpx;
+  background-color: #f1a83b;
+  box-sizing: content-box;
+  font-size: 20rpx;
+  line-height: 35rpx;
+  overflow: hidden;
+  color: #fff;
+  display: inline-block;
+}
+
+.good-work{
+  width: 100%;
+}
+
+.small-title{
+  text-align: center;
+  font-size: 40rpx;
+  padding: 10px;
+  background-color: white;
+}
+
+.show-area{
+  width: 100%;
+  height: 200px;
+}
+
+.images1{
+  width: 50%;
+  height: 200px;
+  position: absolute;
+}
+.images2{
+  margin-left: 50%;
+  width: 50%;
+  height: 100px;
+  position: absolute;
+}
+.images3{
+  margin-left: 50%;
+  margin-top: 100px;
+  width: 50%;
+  height: 100px;
+  position: absolute;
+}
+
+.calligraphy{
+  width: 100%;
+  height: 300px;
+}
+
+.calligraphy-head{
+  width: 100%;
+  height: 100px;
+  background-color: #d9d6c3;
+  font-size: 15px;
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+}
+.images4{
+  width: 50%;
+  height: 150px;
+  position: absolute;
+}
+.images5{
+  width: 50%;
+  height: 150px;
+  margin-left: 50%;
+  position: absolute;
+}
+.calligraphy-msg{
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  margin-top: 150px;
+  background-color: white;
+}
+.calligraphy-msg .construction{
+  text-align: center;
+  font-size: 12px;
+}
+.calligraphy-msg .author{
+  text-align: center;
+  font-size: 8px;
+}
+.calligraphy-msg .price{
+  text-align: center;
+  font-size: 8px;
+  color: red;
+}
+.sketch{
+  width: 100%;
+}
+.sketch .head-title{
+  height: 100px;
+  background-color: #d9d6c3;
+  font-size: 15px;
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+}
+.sketch .content{
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.sketch .content .images{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+.sketch .content .image-msg{
+  width: 50%;
+  height: 100px;
+  margin-left: 50%;
+  position: absolute;
+  text-align: center;
+  margin-top: 40px;
+}
+.sketch .content .image-msg .construction{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.sketch .content .image-msg .author{
+  font-size: 10px;
+  color:#d9d6c3; 
+  margin-bottom: 5px;  
+}
+.sketch .content .image-msg .price{
+  font-size: 10px;
+  color: red;
+}
+
+.detection{
+  width: 100%;
+  height: 250px;
+  background-color: gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.detection .part{
+  width: 50%;
+  height: 250px;
+  position: absolute;
+  background-color: white;
+}
+.detection .part .head1{
+  font-size:10px;
+  margin:5px;
+  text-align: center;
+}
+.detection .part .head2{
+  font-size:8px;
+  margin:2.5px;
+  text-align: center;
+}
+.detection .part .images{
+  margin-left: 10px;
+  width: 150px;
+  height: 200px;
+}
+.ink{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width:100%;
+  height: 400px;
+  background-color: white;
+}
+.ink .head{
+  text-align: center;
+  font-size: 15px;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.ink .images{
+  width: 100%;
+  height:300px;
+}
+.ink .message{
+  width: 100%;
+  height: 80px;
+}
+.ink .message .construction{
+  font-size: 15px;
+  color: gray;
+  margin-top:10px;
+  margin-left:10px;  
+}
+.ink .message .author{
+  font-size: 10px;
+  color: lightgray;
+  margin-left: 10px; 
+  margin-top: 5px; 
+}
+.ink .message .price{
+  font-size: 12.5px;
+  color: red;
+  margin-top: 10px;
+  margin-left: 225px;
+  position: absolute;
+}
+
+.recommend{
+  width:100%;
+  margin-top: 10px;
+  background-color: white;
+}
+.recommend .head{
+  margin: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+.recommend .part{
+  width: 40%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  height: 140px;
+  background-color: lightgrey;
+  display: inline-block;
+  text-align: center;
+}
+.recommend .part .images{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.recommend .part .labels{
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  background-color: linen;
+}
+.recommend .part .des{
+  font-size: 12px;
+  margin-top: 10px;
+}
+.recommend .part .price{
+  font-size: 12px;
+  color: red;
+  margin-top: 10px;
+}
+

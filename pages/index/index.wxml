@@ -1,0 +1,131 @@
+<!--index.wxml-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+   <view class="swiper-container">
+        <swiper class="swiper_box" 
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+            <block wx:for="{{banners}}">
+                <swiper-item>
+                    <image src='../../images/Images/good_works/16.jpeg' class="slide-image" width="750rpx" height="562.5rpx" bindtap='tabClick'/>
+                </swiper-item>
+                <swiper-item>
+                    <image src='../../images/Images/good_works/11.jpeg' class="slide-image" width="750rpx" height="562.5rpx" bindtap='tabClick'/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="dots">  
+            <block wx:for="{{banners}}" wx:key="unique">  
+                <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+            </block>  
+        </view>  
+   </view>
+   <view class="good-work">
+        <view class="small-title">优秀作品></view>
+        <view class='show-area'>
+          <image class='images1' src="{{src01}}"></image>
+          <image class='images2' src="{{src02}}"></image>
+          <image class='images3' src="{{src03}}"></image>
+        </view>
+   </view>
+   <view class='calligraphy'>
+    <view class='calligraphy-head'>
+        书法展示·新品首发
+    </view>
+    <view class='show-area'>
+      <image class='images4' src="{{src04}}"></image>
+      <view class='calligraphy-msg'>
+          <view class='construction'>上海书法协会</view>
+          <view class='author'>宣家鑫</view>
+          <view class='price'>￥4</view>
+      </view>
+      <image class='images5' src="{{src05}}"></image>
+          <view class='calligraphy-msg' style='margin-left:50%'>
+          <view class='construction'>上海书法协会</view>
+          <view class='author'>宣家鑫</view>
+          <view class='price'>￥4</view>
+      </view>
+    </view>
+   </view>
+   <view class='sketch'>
+    <view class='head-title'>素描推荐</view>
+ 
+    <view class='content' style='margin-top: 0px;'>
+      <image class='images' src='{{src06}}'></image>
+      <view class='image-msg'>
+        <view class='construction'>酒香阁画院</view>
+        <view class='author'>非一般的素描美女</view>
+        <view class='price'>￥10</view>
+      </view>
+    </view>
+
+    <view class='content'>
+      <image class='images' src='{{src07}}'></image>
+      <view class='image-msg'>
+        <view class='construction'>索氏藝域Sophia's Art</view>
+        <view class='author'>玫瑰鉛筆素描</view>
+        <view class='price'>￥6</view>
+      </view>
+    </view>
+
+    <view class='content'>
+      <image class='images' src='{{src08}}'></image>
+      <view class='image-msg'>
+        <view class='construction'>llsam755</view>
+        <view class='author'>素描喵</view>
+        <view class='price'>￥14</view>
+      </view>
+    </view>    
+   </view>
+   <view class='detection'>
+    <view class='part'>
+      <view class='head1'>人物速写</view>
+      <view class='head2'>漫威人物</view>
+      <image class='images' src="{{src09}}"></image>
+    </view>
+    <view class='part' style='margin-left:50%'>
+      <view class='head1'>剪纸艺术</view>
+      <view class='head2'>剪纸基础</view>
+      <image class='images' src="{{src10}}"></image>
+    </view>
+   </view>
+   <view class='ink'>
+    <view class='head'>水墨精选</view>
+    <image class='images' src='{{src11}}'></image>
+    <view class='message'>
+      <view class='price'>￥29元起</view>    
+      <view class='construction'>忆江南</view>
+      <view class='author'>能不忆江南</view>
+    </view>
+   </view>
+   <view class='recommend'>
+    <view class='head'>猜你喜欢</view>
+    <view class='part'>
+      <image class='images' src='{{src12}}'></image>
+      <view class='labels'>竹</view> 
+      <view class='des'>竹子</view>
+      <view class='price'>￥12</view>
+    </view>
+
+    <view class='part'>
+      <image class='images' src='{{src13}}'></image>
+      <view class='labels'>竹</view> 
+      <view class='des'>墨竹</view>
+      <view class='price'>￥18</view>
+    </view>
+
+    <view class='part'>
+      <image class='images' src='{{src14}}'></image>
+      <view class='labels'>竹</view> 
+      <view class='des'>翠竹</view>
+      <view class='price'>￥18</view>
+    </view>
+
+    <view class='part'>
+      <image class='images' src='{{src15}}'></image>
+      <view class='labels'>竹</view> 
+      <view class='des'>竹子</view>
+      <view class='price'>￥12</view>
+    </view>
+   </view>
+    <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">没有更多啦</view>
+</view>

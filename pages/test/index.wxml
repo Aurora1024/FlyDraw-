@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class='container'>
+  <navigator url="../index/index" open-type="switchTab">切换到首页Tab</navigator>
+  <view>显示界面</view>
+  <image class='images' src="{{src}}"></image>
+  <view class='message'>
+    <view class='description'>素描女子</view>
+    <view class='construction'>酒香阁画院</view>
+    <view class='author'>墨言彧</view>
+    <view class='price'>￥4</view>
+  </view>
+</view>
